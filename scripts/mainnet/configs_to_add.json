@@ -1,0 +1,15 @@
+{
+    "0":{
+        "delegator":"",
+        "underlying":"0x3d4350cd54aef9f9b2c29435e0fa809957b3f30a",
+        "underlying_symbol":"UST",
+        "baseUnit":1000000000000000000,
+        "priceSource":2,
+        "fixedUsd":0,
+        "pairAddress":"0x348e414212e99fAb834DF43155947a2D6ebA70f9",
+        "chainLink":"0xcbf8518F8727B8582B22837403cDabc53463D462",
+        "chainLinkMultiplier":10000000000000000,
+        "reverse":false
+    }
+
+}

@@ -1,0 +1,46 @@
+{
+
+    "0":{
+        "underlying":"0x90C97F71E18723b0Cf0dfa30ee176Ab653E89F40",
+        "name":"GAMMA FRAX",
+        "market_symbol":"gFRAX",
+        "underlying_symbol":"FRAX",
+        "decimals":8,
+        "collateral":750000000000000000,
+        "reserveFactor":50000000000000000,
+        "initialExchangeRateMantissa":200000000000000000000000000,
+        "baseUnit":1000000000000000000,
+        "priceSource":4,
+        "fixedUsd":0,
+        "pairAddress":"0x0000000000000000000000000000000000000000",
+        "chainLink":"0x13A9c98b07F098c5319f4FF786eB16E22DC738e1",
+        "chainLinkMultiplier":10000000000000000,
+        "reverse":false,
+        "isBNB":false,
+        "isStable":true,
+        "isAQUAorGAMMA":false,
+        "isOther":false
+    },
+    "1":{
+        "underlying":"0x3d4350cd54aef9f9b2c29435e0fa809957b3f30a",
+        "name":"GAMMA UST (Wormhole)",
+        "market_symbol":"gUST",
+        "underlying_symbol":"UST",
+        "decimals":8,
+        "collateral":750000000000000000,
+        "reserveFactor":50000000000000000,
+        "initialExchangeRateMantissa":200000000000000000000000000,
+        "baseUnit":1000000000000000000,
+        "priceSource":2,
+        "fixedUsd":0,
+        "pairAddress":"0x348e414212e99fAb834DF43155947a2D6ebA70f9",
+        "chainLink":"0xcbf8518F8727B8582B22837403cDabc53463D462",
+        "chainLinkMultiplier":10000000000000000,
+        "reverse":false,
+        "isBNB":false,
+        "isStable":true,
+        "isAQUAorGAMMA":false,
+        "isOther":false
+    }
+
+}

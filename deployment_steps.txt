@@ -1,0 +1,30 @@
+Use this script to fork mainnet on your local:-
+npx hardhat node --fork https://speedy-nodes-nyc.moralis.io/f19381e84e5c8dde5935ae3e/bsc/mainnet/archive
+
+
+Step1:- Deploy GAMMA contract using `deploy_gamma.js`.
+
+Step2:- Replace the Deployed GAMMA adderess in the `getGammaAddress()` in Gammatroller.sol and in `deploy_all.js at line no.36`.
+
+Step3:-change configs in `token_configs.json`.
+
+Step4: Deploy all other contracts using deploy_all.js.
+
+Step5:- If you want to change config follow these steps:
+        a)Go to token_configs.json file there you will configs like this 
+
+        "underlying":"0x90C97F71E18723b0Cf0dfa30ee176Ab653E89F40", //BEP20 TOKEN ADDRESS FOR WHICH WE ARE DEPLOYING MARKET
+        "name":"FRAX", //NAME OF MARKET TOKEN
+        "symbol":"gFRAX", //SYMBOL OF MARKET TOKEN
+        "decimals":8,
+        "collateral":750000000000000000, //COLLATERAL FACTOR IN THIS MARKET
+        "reserveFactor":50000000000000000, //RESERVE FACTOR IN THIS MARKET
+        "initialExchangeRateMantissa":200000000000000000000000000,
+        "baseUnit":1000000000000000000, //IN BNB IT IS `1000000` AND IN OTHERS IT IS `1000000000000000000`
+        "priceSource":4, //FOR AQUA,GAMMMA IT IS 3 ; FOR FRAX IT IS 4 ; FOR OTHERS IT IS 2
+        "fixedUsd":0, //IF PRICE SOURCE IS 1 THEN ONLY WE PROVIDE THIS VALUE AS `1000000` OTHERWISE IT IS PASSED AS 0
+        "pairAddress":"0x0000000000000000000000000000000000000000", 
+        "chainLink":"0x13A9c98b07F098c5319f4FF786eB16E22DC738e1",
+        "chainLinkMultiplier":10000000000000000,
+        "reverse":true,
+        "stableCoin":true //IF UNDERLYING TOKEN IS STABLE COIN PASS IT AS TRUE 
